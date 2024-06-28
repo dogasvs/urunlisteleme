@@ -1,77 +1,107 @@
-body {
-  font-family: Arial, sans-serif;
-  margin: 0;
-  padding: 20px;
-  background-color: #f5f5f5;
+.EditControls svg {
+  width: 16px;
+  height: 16px;
 }
 
-.urunForm {
-  width: 800px;
-  margin: 0 auto;
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-  background-color: #fff;
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f4f4;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  max-width: 800px;
+  margin: 20px auto;
   padding: 20px;
-  border-radius: 8px;
+  background-color: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.urunHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 20px;
 }
 
-.urun-item {
-  display: flex;
-  flex-direction: column;
+.urunHeader h1 {
+  margin: 0;
+  font-size: 24px;
 }
 
-.urun-item label {
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-.urun-item input, .urun-item select {
-  padding: 8px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-}
-
-.add {
-  padding: 10px 15px;
+.urunHeader button {
+  padding: 10px 20px;
+  font-size: 16px;
   background-color: #007BFF;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
-.add:hover {
+.urunHeader button:hover {
   background-color: #0056b3;
 }
 
-.delete {
-  width: 800px;
-  padding: 10px 15px;
+.urunler {
+  margin-bottom: 20px;
+}
+
+dialog {
+  padding: 20px;
+  border: none;
+  border-radius: 10px;
+}
+
+dialog::backdrop {
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+form label {
+  margin-top: 10px;
+}
+
+form input, form select, form button {
+  margin-top: 5px;
+  padding: 10px;
+  font-size: 16px;
+}
+
+form button {
   background-color: #007BFF;
   color: #fff;
   border: none;
-  border-radius: 4px;
+  border-radius: 5px;
   cursor: pointer;
 }
 
+form button:hover {
+  background-color: #0056b3;
+}
 
-.urunList {
-  width: 800px;
-  margin: 0 auto;
-  background-color: #fff;
+.vazgec {
+  background-color: #6c757d;
+}
+
+.vazgec:hover {
+  background-color: #5a6268;
+}
+
+form p {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.urun {
+  width: 200px;
+  background-color: #f491c4;
   padding: 20px;
-  border-radius: 8px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.urunList h2 {
-  margin-top: 0;
-  color: #333;
-}
-
-.urunList div {
-  margin-bottom: 20px;
+  border-radius: 10px;
 }
